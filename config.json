@@ -18,10 +18,10 @@
     },
     "icons": {
         "Github" : {
-            "icon_src" : "images/github.svg",
+            "icon_src" : "https://zidc.github.io/images/avatar.jpg",
             "href" : "https://zidc.github.io",
-            "hidden_img" : null,
-            "width" : 0
+            "hidden_img" : 35,
+            "width" : null ，
         }
     }
 }
