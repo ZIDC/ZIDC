@@ -7,18 +7,15 @@
     "instruction": "一个简单的个人博客",
     "server_link": "",
     "filter": {
-        "creator": "all",	@param: "all" or a username(eg. "imuncle")
-        "state": "open"		@param: "open", "close", "all"
+        "creator": "all",	
+        "state": "open"		
     },
     "menu": {
-        add your menu items and URL here
-        example:
         "Home" : "./",
         "RSS" : "https://rsshub.app/github/issue/imuncle/imuncle.github.io",
         "About me" : "content.html?id=41"
     },
     "friends": {
-        example:
         imuncle : "https://imuncle.github.io"
     },
     "icons": {
