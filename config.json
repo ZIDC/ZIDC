@@ -19,20 +19,16 @@
         imuncle : "https://imuncle.github.io"
     },
     "icons": {
-        template :
         "the title of the icon" : 
         {
           "icon_src" : "the image of the icon",
           "href" : "the link you want to jump",
           "hidden_img" : "the image you want to show",
-          "width" : the width of the hidden_img, this should be a number.(unit : px)
         }
-        example :
         "Github" : {
             "icon_src" : "images/github.svg",
             "href" : "https://github.com/imuncle",
             "hidden_img" : null,
-            'width" : 0
         }
     }
 }
