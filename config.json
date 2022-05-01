@@ -20,8 +20,8 @@
         "Github" : {
             "icon_src" : "https://zidc.github.io/images/avatar.jpg",
             "href" : "https://zidc.github.io",
-            "hidden_img" : 25,
-            "width" : 25
+            "hidden_img" : 10,
+            "width" : 10
         }
     }
 }
