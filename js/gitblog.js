@@ -152,7 +152,7 @@ var gitblog = function(config) {
         this.page = new Pages();
         this.icons = [];
         this.icon_num = 0;
-        this.content = '<span style="font-size:10px"><font color-"#F0F0F0">Copyright © <script>document.write( new Date().getFullYear() );</script> Powered by <a href="http://#">cjzwjyun</span> . All rights reserved.<br><a href="http://beian.miit.gov.cn">苏ICP备20014892号-1</span></font></span></a>';
+        this.content = '<span style="font-size:10px"><font color-"#F0F0F0">Copyright © <script>document.write( new Date().getFullYear() );</script> Powered by <a href="http://#">cjzwjyun</a> . All rights reserved.<br><a href="http://beian.miit.gov.cn">苏ICP备20014892号-1</a></span></font></span>';
     }
 
     Footer.prototype = {
