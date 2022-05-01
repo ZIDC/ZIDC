@@ -17,6 +17,17 @@
         "imuncle" : "https://imuncle.github.io"
     },
     "icons": {
+        
+        //add your footer icons here
+        //you can set a jump link or display an image
+        template :
+        "the title of the icon" : {
+          "icon_src" : "the image of the icon",
+          "href" : "the link you want to jump",
+          "hidden_img" : "the image you want to show",
+          "width" : the width of the hidden_img, this should be a number.(unit : px)
+        }
+
         "Github" : {
             "icon_src" : "images/github.svg",
             "href" : "https://github.com/imuncle/gitblog",
