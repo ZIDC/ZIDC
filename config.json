@@ -7,32 +7,35 @@
     "instruction": "一个简单的个人博客",
     "server_link": "",
     "filter": {
-        "creator": "all",
-        "state": "open"
+        "creator": "all",	@param: "all" or a username(eg. "imuncle")
+        "state": "open"		@param: "open", "close", "all"
     },
     "menu": {
-        "首页":"./"
+        add your menu items and URL here
+        example:
+        "Home" : "./",
+        "RSS" : "https://rsshub.app/github/issue/imuncle/imuncle.github.io",
+        "About me" : "content.html?id=41"
     },
     "friends": {
-        "imuncle" : "https://imuncle.github.io"
+        example:
+        imuncle : "https://imuncle.github.io"
     },
     "icons": {
-        
-        //add your footer icons here
-        //you can set a jump link or display an image
         template :
-        "the title of the icon" : {
+        "the title of the icon" : 
+        {
           "icon_src" : "the image of the icon",
           "href" : "the link you want to jump",
           "hidden_img" : "the image you want to show",
           "width" : the width of the hidden_img, this should be a number.(unit : px)
         }
-
+        example :
         "Github" : {
             "icon_src" : "images/github.svg",
-            "href" : "https://github.com/imuncle/gitblog",
+            "href" : "https://github.com/imuncle",
             "hidden_img" : null,
-            "width" : 0
+            'width" : 0
         }
     }
 }
