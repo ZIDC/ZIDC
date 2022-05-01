@@ -13,12 +13,13 @@
     "menu": {
         "首页":"./"
     },
-    "friends": {
-        "imuncle" : ""
+ "friends": {
+        "imuncle" : "https://zidc.github.io"
     },
     "icons": {
         "Github" : {
-            "href" : "",
+            "icon_src" : "images/github.svg",
+            "href" : "https://zidc.github.io",
             "hidden_img" : null,
             "width" : 0
         }
