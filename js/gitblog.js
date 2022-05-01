@@ -152,7 +152,7 @@ var gitblog = function(config) {
         this.page = new Pages();
         this.icons = [];
         this.icon_num = 0;
-        this.content = 'Powered by <a href="https://github.com/imuncle/gitblog" target="_blank" style="color: aquamarine;text-decoration:none;border-bottom: 1px solid #79f8d4;">gitblog</a>';
+        this.content = 'Copyright © <script>document.write( new Date().getFullYear() );</script> Powered by cjzwjyun . All rights reserved.<br><a href="http://beian.miit.gov.cn">苏ICP备20014892号-1</a>';
     }
 
     Footer.prototype = {
