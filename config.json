@@ -14,12 +14,11 @@
         "首页":"./"
     },
     "friends": {
-        "imuncle" : "https://imuncle.github.io"
+        "imuncle" : ""
     },
     "icons": {
         "Github" : {
-            "icon_src" : "images/github.svg",
-            "href" : "https://github.com/imuncle/gitblog",
+            "href" : "",
             "hidden_img" : null,
             "width" : 0
         }
