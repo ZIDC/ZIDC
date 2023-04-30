@@ -99,10 +99,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
 
 # 文章链接转数字或字母：https://github.com/rozbo/hexo-abbrlink
 abbrlink:
@@ -110,3 +106,8 @@ abbrlink:
   alg: crc16
   #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
   rep: hex
+deploy:
+  - type: git
+    repository: git@github.com:ZIDC/zidc.github.io.git
+    branch: master
+
