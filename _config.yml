@@ -107,7 +107,7 @@ abbrlink:
   #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制
   rep: hex
 deploy:
-  - type: git
+    type: git
     repository: git@github.com:ZIDC/zidc.github.io.git
     branch: master
 
