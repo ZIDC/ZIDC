@@ -213,10 +213,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  - type: git
+    repository: git@github.com:ZIDC/zidc.github.io.git
+    branch: main
 
 # 文章链接转数字或字母：https://github.com/rozbo/hexo-abbrlink
 abbrlink:
