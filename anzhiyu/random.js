@@ -1,0 +1,1 @@
+var posts=["2023/04/29/划伤手指/","2023/04/29/流浪地球2，国科幻的未来/","2022/05/01/我的第一个博客/"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
