@@ -18,6 +18,28 @@ window.addEventListener("load", () => {
     });
   };
 
+  // shortcut: shift+S
+  if (anzhiyu_keyboard) {
+    window.addEventListener("keydown", function (event) {
+      if (event.keyCode == 83 && event.shiftKey) {
+        console.info(selectTextNow);
+        if (selectTextNow) {
+          openSearch();
+          const t = document.querySelector("#algolia-search-input > div > form > input");
+          t.value = selectTextNow;
+          t.dispatchEvent(new Event("input"));
+          setTimeout(() => {
+            document.querySelector("#algolia-search-input > div > form > button.ais-SearchBox-submit").click();
+          }, 64);
+        } else {
+          openSearch();
+        }
+
+        return false;
+      }
+    });
+  }
+
   const closeSearch = () => {
     const bodyStyle = document.body.style;
     bodyStyle.width = "";
@@ -28,6 +50,11 @@ window.addEventListener("load", () => {
 
   const searchClickFn = () => {
     document.querySelector("#search-button > .search").addEventListener("click", openSearch);
+    document.getElementById("search-mask").addEventListener("click", closeSearch);
+    document.querySelector("#algolia-search .search-close-button").addEventListener("click", closeSearch);
+  };
+
+  const searchClickFnOnce = () => {
     document.getElementById("search-mask").addEventListener("click", closeSearch);
     document.querySelector("#algolia-search .search-close-button").addEventListener("click", closeSearch);
     const menuSearch = document.querySelector("#menu-search");
@@ -41,11 +68,6 @@ window.addEventListener("load", () => {
         document.querySelector("#algolia-search-input > div > form > button.ais-SearchBox-submit").click();
       }, 64);
     });
-  };
-
-  const searchClickFnOnce = () => {
-    document.getElementById("search-mask").addEventListener("click", closeSearch);
-    document.querySelector("#algolia-search .search-close-button").addEventListener("click", closeSearch);
   };
 
   const cutContent = content => {
@@ -135,7 +157,7 @@ window.addEventListener("load", () => {
         templates += `
           </div>
         </div>`;
-        const loadingLogo = document.querySelector("#algolia-hits .anzhiyufont.anzhiyu-icon-spinner.anzhiyu-spin");
+        const loadingLogo = document.querySelector("#algolia-hits .anzhiyu-spin");
         if (loadingLogo) {
           loadingLogo.style.display = "none";
         }
@@ -145,7 +167,8 @@ window.addEventListener("load", () => {
         return templates;
       },
       empty: function (data) {
-        const loadingLogo = document.querySelector("#algolia-hits .fa.anzhiyu-spinner.anzhiyu-spin");
+        const loadingLogo = document.querySelector("#algolia-hits .anzhiyu-spin");
+        console.info(loadingLogo);
         if (loadingLogo) {
           loadingLogo.style.display = "none";
         }
